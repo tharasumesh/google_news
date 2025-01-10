@@ -67,11 +67,11 @@ public class GoogleNews extends BaseClass {
 	            File screenshot=((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
 	            FileUtils.copyFile(screenshot,new File("screenshot.png"));
 	       	            
-	            WebDriverWait wait1=new WebDriverWait(driver,Duration.ofSeconds(10));
-	            wait1.until(ExpectedConditions.visibilityOfElementLocated(By,id("")));
+	            WebDriverWait wait11=new WebDriverWait(driver,Duration.ofSeconds(10));
+	            wait11.until(ExpectedConditions.visibilityOfElementLocated(By.id("")));
 	            Assert.assertEquals(false,true);
 	            WebDriverWait wait2=new WebDriverWait(driver,Duration.ofSeconds(10));
-	            wait1.until(ExpectedConditions.visibilityOfElementLocated(By.id("")));
+	            wait11.until(ExpectedConditions.visibilityOfElementLocated(By.id("")));
 	           
 	       	            
 	           }
@@ -82,11 +82,18 @@ public class GoogleNews extends BaseClass {
 	            Assert.assertEquals(false, null);
                 File screenshot = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
 	            FileUtils.copyFile(screenshot, new File("screenshot.png"));
-	           
-	            
+	           	            
 	            JavascriptExecutor js3=(JavascriptExecutor)driver;
 	            js3.executeScript("",driver);
 	            WebDriverWait wait2DriverWait=new WebDriverWait(driver,Duration.ofSeconds(20));
+	            Assert.assertEquals(false,true);
+	         
+	           
+	            
+	            
+	            
+	            
+	            
 	            
 	            
 	            
